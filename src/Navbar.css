@@ -1,0 +1,139 @@
+.navbar-container {
+    z-index: 1;
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+
+    padding: 20px 40px;
+    padding-bottom: 10px;
+
+    align-items: center;
+
+    display: flex;
+
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, transparent);
+}
+
+.navbar-container>.logo {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.navbar-container>.logo:hover {
+    cursor: pointer;
+}
+
+.navbar-container>.button-tertiary {
+    transition: color 100ms linear;
+
+    border: none;
+    padding: 0px;
+    margin: 0px 10px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+
+    background: none;
+    color: rgb(230, 230, 230);
+    outline: none;
+}
+
+.navbar-container>.button-tertiary:hover {
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.navbar-container>.button-tertiary-active {
+    font-weight: 500;
+
+    color: white;
+}
+
+.navbar-container>.button-tertiary-active:hover {
+    color: white;
+    cursor: unset;
+}
+
+.navbar-container>svg {
+    color: white;
+
+    margin: 0px 10px;
+}
+
+.navbar-container>.profile-image {
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav__black {
+    background-color: #111;
+}
+
+.spacer {
+    margin-left: auto;
+}
+
+@media (max-width: 750px) {
+    .navbar-container>.button-tertiary {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 900px) {
+    .navbar-container>.button-tertiary {
+        color: white;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .navbar-container>.button-tertiary {
+        color: white;
+        font-size: 14px;
+    }
+}
+
+/* .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    height: 30px;
+
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+
+
+.nav__logo {
+    position: fixed;
+    left: 60px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.nav__avatar {
+    position: fixed;
+    right: 80px;
+    width: 30px;
+    object-fit: contain;
+} */
